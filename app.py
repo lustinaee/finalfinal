@@ -38,3 +38,9 @@ def authorize():
     # do something with the token and profile
     session['email'] = user_info['email']
     return render_template('support.html')
+
+@app.route('/logout')
+def logout():
+    for key in list(session.keys()):
+        session.pop(key)
+    return redirect('/')
