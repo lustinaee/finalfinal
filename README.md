@@ -2,9 +2,18 @@
 
 Austin Lee
 
-This simple application allows users to ask any tech related questions they may have. It uses Oauth2 and Flask.
+This simple application allows users to ask any tech related questions they may have.
 
-## Steps
+## Utilizes:
+
+* Python
+* Flask
+* OAuth2
+* HTML
+* CSS
+* Docker
+
+## Instructions
 
 1. Download the finalfinal application.
 
@@ -15,6 +24,9 @@ This simple application allows users to ask any tech related questions they may 
 ```bash
 flask run
 ```
+## Images
+
+![alt text](https://i.imgur.com/lD7fhhJ.png)
 
 4. http://127.0.0.1:5000/login will direct you to the Google login page. Enter your email and password there.
 
