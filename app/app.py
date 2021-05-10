@@ -1,6 +1,22 @@
 from flask import Flask, url_for, redirect, session, render_template
 from authlib.integrations.flask_client import OAuth
 
+app = Flask(__name__)
+app.secret_key = 'random secret'
+
+oauth = OAuth(app)
+google = oauth.register(
+    name='google',
+    client_id='1058292961152-6ej7c2j3ivr5k7qabaqbvbqipimaajmp.apps.googleusercontent.com',
+    client_secret='RTgG8iqsXTQo7LttXYw2rA9w',
+    access_token_url='https://accounts.google.com/o/oauth2/token',
+    access_token_params=None,
+    authorize_url='https://accounts.google.com/o/oauth2/auth',
+    authorize_params=None,
+    api_base_url='https://www.googleapis.com/oauth2/v1/',
+    client_kwargs={'scope': 'openid profile email'},
+)
+
 @app.route("/")
 def hello():
     email = dict(session).get('email', None)
