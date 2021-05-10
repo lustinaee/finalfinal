@@ -10,7 +10,11 @@ This simple application allows users to ask any tech related questions they may 
 
 2. Open the application with a terminal.
 
-3. Type in flask run. This will initiate the application and open the link: http://127.0.0.1:5000/
+3. Type in the following to initiate the application. Then open the link: http://127.0.0.1:5000/
+
+```bash
+flask run
+```
 
 4. http://127.0.0.1:5000/login will direct you to the Google login page. Enter your email and password there.
 
