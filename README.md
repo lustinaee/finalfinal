@@ -24,10 +24,16 @@ This simple application allows users to ask any tech related questions they may 
 ```bash
 flask run
 ```
+4. http://127.0.0.1:5000/login will direct you to the Google login page. Enter your email and password there.
+
+5. You will be directed to the support page. After submitting your message, you can logout here: http://127.0.0.1:5000/logout
+
 ## Images
 
 ![alt text](https://i.imgur.com/lD7fhhJ.png)
 
-4. http://127.0.0.1:5000/login will direct you to the Google login page. Enter your email and password there.
+![alt text](https://i.imgur.com/jnkXYZk.png)
 
-5. You will be directed to the support page. After submitting your message, you can logout here: http://127.0.0.1:5000/logout
+![alt text](https://i.imgur.com/jSb1r71.png)
+
+![alt text](https://i.imgur.com/Nn8urX9.png)
